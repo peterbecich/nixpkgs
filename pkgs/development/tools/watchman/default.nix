@@ -1,21 +1,25 @@
-{ stdenv, lib, config, fetchFromGitHub, autoconf, automake, pcre
-, libtool, pkg-config, openssl
-, confFile ? config.watchman.confFile or null
-, withApple ? stdenv.isDarwin, CoreServices
+with import <nixpkgs> {};
+
+{#  stdenv, lib, config, fetchFromGitHub, autoconf, automake, pcre
+# , libtool, pkg-config, openssl, python3
+# ,
+  confFile ? config.watchman.confFile or null
+, withApple ? stdenv.isDarwin #, CoreServices
 }:
+
 
 stdenv.mkDerivation rec {
   pname = "watchman";
-  version = "4.9.0";
+  version = "2022.11.14.00";
 
   src = fetchFromGitHub {
     owner = "facebook";
     repo = "watchman";
     rev = "v${version}";
-    sha256 = "0fdaj5pmicm6j17d5q7px800m5rmam1a400x3hv1iiifnmhgnkal";
+    sha256 = "1zfhax6zq5k6lisnfammi278knnsgsfgyi7lcc4wgizqsbpvsb5p";
   };
 
-  nativeBuildInputs = [ autoconf automake pkg-config libtool ];
+  nativeBuildInputs = [ autoconf automake pkg-config libtool python3 ];
   buildInputs = [ pcre openssl ]
     ++ lib.optionals withApple [ CoreServices ];
 
