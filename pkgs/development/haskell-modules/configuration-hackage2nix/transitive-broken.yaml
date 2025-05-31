@@ -136,11 +136,13 @@ dont-distribute-packages:
  - atlassian-connect-core
  - atmos-dimensional-tf
  - atom-msp430
+ - atomic-css
  - atomic-primops-foreign
  - atp
  - attenuation-profunctors
  - AttoJson
  - attoparsec-enumerator
+ - attoparsec-isotropic
  - attoparsec-iteratee
  - attoparsec-text-enumerator
  - atuin
@@ -467,6 +469,7 @@ dont-distribute-packages:
  - clod
  - cloud-haskell
  - cloud-seeder
+ - cloudevents-haskell
  - cloudyfs
  - clr-bindings
  - clr-inline
@@ -1082,6 +1085,7 @@ dont-distribute-packages:
  - geodetic
  - geolite-csv
  - getemx
+ - ghc-debugger
  - ghc-dump-util
  - ghc-experimental
  - ghc-imported-from
@@ -1609,7 +1613,6 @@ dont-distribute-packages:
  - hs-functors
  - hs-gen-iface
  - hs-ix
- - hs-pkpass
  - hs-profunctors
  - hs-sdl-term-emulator
  - hs2ats
@@ -2208,6 +2211,7 @@ dont-distribute-packages:
  - Michelangelo
  - micro-gateway
  - microformats2-types
+ - MicroHs
  - MicrosoftTranslator
  - midimory
  - mig-server
@@ -2815,7 +2819,6 @@ dont-distribute-packages:
  - rbr
  - rc
  - rdioh
- - rds-data
  - react-flux-servant
  - reactive
  - reactive-banana-sdl
@@ -2885,7 +2888,6 @@ dont-distribute-packages:
  - reserve
  - resin
  - resource-pool-catchio
- - resource-registry
  - resource-simple
  - rest-client
  - rest-core
@@ -3014,7 +3016,6 @@ dont-distribute-packages:
  - scalpel-search
  - scan-metadata
  - scan-vector-machine
- - scheduling
  - schematic
  - scholdoc
  - scholdoc-citeproc
@@ -3317,6 +3318,7 @@ dont-distribute-packages:
  - streaming-sort
  - strelka
  - strelka-wai
+ - strict-checked-vars
  - strict-data
  - string-typelits
  - stripe-haskell
@@ -3545,6 +3547,8 @@ dont-distribute-packages:
  - TypeClass
  - typed-encoding-encoding
  - typed-gui
+ - typed-protocols
+ - typed-protocols-doc
  - typed-streams
  - typedflow
  - TypeIlluminator
@@ -3642,7 +3646,6 @@ dont-distribute-packages:
  - venzone
  - verdict-json
  - verifiable-expressions
- - verismith
  - versioning-servant
  - vertexenum
  - vflow-types
